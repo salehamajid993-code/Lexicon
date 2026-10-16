@@ -196,7 +196,7 @@ function gcard(x){const act=x.k==='play'?`<button class="btn sm" data-a="play" d
 return `<article class="card"><span class="badge ${LC[x.lv]}">${LV[x.lv]}</span><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p><p><small>About ${x.m} min</small></p>${act}</article>`}
 const views={
 home:()=>`<section class="hero"><div><span class="pill">A creative learning space for curious children</span>
-<h1>Where little readers become <em>big storytellers</em></h1><p>Creative writing, storytelling, vocabulary and language adventures designed to help young minds imagine, express and create.</p>
+<h1>Where little readers become <em>Big Storytellers</em></h1><p>Creative writing, storytelling, vocabulary and language adventures designed to help young minds imagine, express and create.</p>
 <p><a class="btn" href="#/programs">Explore Programs →</a> &nbsp; <a class="btn alt" href="#/contact">Book a Trial</a></p></div>
 <div class="frame">${hero}</div></section>
 <section class="sec"><h2>What can your child discover?</h2><div class="grid">${[['pencil','Creative Writing','Build stories, characters, poems and worlds.','y'],['book','Reading Adventures','Discover stories and ideas beyond a textbook.','s'],['type','Vocabulary Games','Meet new words through playful challenges.','pk'],['mic','Storytelling','Turn ideas into confident expression.','lv'],['palette','Art & Craft','Connect creativity with language.','co'],['message','Story Discussions','Think about characters, choices and feelings.','g']].map(x=>`<article class="card"><div class="ico ${x[3]}" aria-hidden="true">${ic(x[0])}</div><h3>${x[1]}</h3><p>${x[2]}</p></article>`).join('')}</div></section>
